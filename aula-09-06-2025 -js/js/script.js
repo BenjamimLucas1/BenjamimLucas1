@@ -170,4 +170,276 @@ else{
 
 */
 
+/*
+let a = Number(prompt("Digite um valor para 'a' "))
+let b = Number(prompt("Digite um valor para 'b' "))
+let c = Number(prompt("Digite um valor para 'c' "))
+let x = Number(prompt("Digite um valor para 'x' "))
+let calculo = ((a*(x**2))+(b*x)+c)
+console.log(calculo)
+if(calculo != 0){
+    alert("não tem raíz exata")
+}
+else{
+    alert("Tem raíz exata")
+}
+
+*/
+
+/*
+let a = Number(prompt("Digite um valor para 'a' "))
+let b = Number(prompt("Digite um valor para 'b' "))
+let c = Number(prompt("Digite um valor para 'c' "))
+if(a > b && a> c){
+    alert("O 'a' é o maior número dos três")
+}
+else if(b > a && b > c){
+    alert("O 'b' é o maior número dos três")
+}
+else if(c > a && c > b){
+    alert("O 'c' é o maior número dos três")
+}
+else{
+    alert("todos são iguais")
+}
+
+*/
+
+/*
+let a = Number(prompt("Digite um valor para 'a' "))
+let b = Number(prompt("Digite um valor para 'b' "))
+let c = Number(prompt("Digite um valor para 'c' "))
+if(a > b && a> c){
+    alert("O 'a' é o maior número dos três")
+}
+else if(b > a && b > c){
+    alert("O 'b' é o maior número dos três")
+}
+else if(c > a && c > b){
+    alert("O 'c' é o maior número dos três")
+}
+if(a < b && a< c){
+    alert("O 'a' é o menor número dos três")
+}
+else if(b < a && b < c){
+    alert("O 'b' é o menor número dos três")
+}
+else if(c < a && c < b){
+    alert("O 'c' é o menor número dos três")
+}
+else{
+    alert("todos são iguais")
+}
+
+*/
+
+/*
+let a = Number(prompt("Digite o valor do produto 'a' "))
+let b = Number(prompt("Digite o valor do produto 'b' "))
+let c = Number(prompt("Digite o valor do produto 'c' "))
+if(a < b && a < c){
+    alert("O 'a' é o menor número dos três")
+}
+else if(b < a && b < c){
+    alert("O 'b' é o menor número dos três")
+}
+else if(c < a && c < b){
+    alert("O 'c' é o menor número dos três")
+}
+else{
+    alert("todos são iguais")
+}
+
+*/
+
+/*
+let a = Number(prompt("Digite um valor para 'a' "))
+let b = Number(prompt("Digite um valor para 'b' "))
+let c = Number(prompt("Digite um valor para 'c' "))
+numeros = [a, b, c]
+alert(numeros.sort((a, b) => b - a))
+
+
+*/
+
+/*
+let horario = prompt("Em qual turno você estuda ? Digite 'M' para Matutino, V para Vespertino e N para Noturno").toLowerCase()
+switch(horario){
+    case "m" : alert("Bom dia!"); break;
+    case "v" : alert("Boa tarde!"); break;
+    case "n" : alert("Boa noite!"); break;
+    default : alert("Valor inválido"); break;
+}
+
+*/
+
+/*
+let salario = Number(prompt("Digite um valor para ser o salário"))
+if(salario < 280 && salario > 0){
+    alert(salario+" é o salário atual")
+    valor_aumento= salario*0.2
+    salario = salario*1.2
+    alert("20%")
+    alert(valor_aumento+" de aumento")
+    alert(salario)
+}
+else if(salario > 280.01 && salario < 700){
+    alert(salario+" é o salário atual")
+    valor_aumento= salario*0.15
+    salario = salario*1.15
+    alert("15%")
+    alert(valor_aumento+" de aumento")
+    alert(salario)
+}
+else if(salario > 700.01 && salario < 1500){
+    alert(salario+ "é o salário atual")
+    valor_aumento= salario*0.1
+    salario = salario*1.1
+    alert("10%")
+    alert(valor_aumento+" de aumento")
+    alert(salario)
+}
+else if(salario > 1500){
+    alert(salario, "é o salário atual")
+    valor_aumento= salario*0.05
+    salario = salario*1.05
+    alert("5%")
+    alert(salario+" de aumento")
+    alert(salario)
+}
+else{
+    alert('você esta com uma divida de '+salario)
+}
+
+*/
+
+/*
+let hora = Number(prompt("Digite por quantas horas você trabalhou"))
+let valor_da_hora = Number(prompt("Digite quanto vale a sua hora"))
+let salario = hora * valor_da_hora
+if(salario < 900 && salario > 0){
+    alert(salario+ " é o salário atual")
+    ir = salario*0
+    alert(ir+ " é o valor do IR")
+    inss = salario*0.1
+    alert(inss+" é o valor do INSS")
+    sindicato = salario*0.03
+    alert(sindicato+ " é o valor do sindicato")
+    fgts = salario*0.11
+    alert(fgts+ " é o valor do FGTS")
+    salario_final = salario - (ir + inss + sindicato)
+    alert(salario_final + " é o seu salário final")
+}
+else if(salario < 1500 && salario >= 900){
+    alert(salario+ " é o salário atual")
+    ir = salario*0.05
+    alert(ir+ " é o valor do IR")
+    inss = salario*0.1
+    alert(inss+" é o valor do INSS")
+    sindicato = salario*0.03
+    alert(sindicato+ " é o valor do sindicato")
+    fgts = salario*0.11
+    alert(fgts+ " é o valor do FGTS")
+    salario_final = salario - (ir + inss + sindicato)
+    alert(salario_final + " é o seu salário final")
+}
+else if(salario < 2500 && salario >= 1500){
+    alert(salario+ " é o salário atual")
+    ir = salario*0.1
+    alert(ir+ " é o valor do IR")
+    inss = salario*0.1
+    alert(inss+" é o valor do INSS")
+    sindicato = salario*0.03
+    alert(sindicato+ " é o valor do sindicato")
+    fgts = salario*0.11
+    alert(fgts+ " é o valor do FGTS")
+    salario_final = salario - (ir + inss + sindicato)
+    alert(salario_final + " é o seu salário final")
+}
+else if(salario >= 2500){
+    alert(salario+ " é o salário atual")
+    ir = salario*0.2
+    alert(ir+ " é o valor do IR")
+    inss = salario*0.1
+    alert(inss+" é o valor do INSS")
+    sindicato = salario*0.03
+    alert(sindicato+ " é o valor do sindicato")
+    fgts = salario*0.11
+    alert(fgts+ " é o valor do FGTS")
+    salario_final = salario - (ir + inss + sindicato)
+    alert(salario_final + " é o seu salário final")
+}
+
+*/
+
+/*
+let numero = Number(prompt("Informe um número de 1 a 7:"))
+switch(numero){
+    case 1 : alert("Domingo"); break;
+    case 2 : alert("Segunda-feira"); break;
+    case 3 : alert("Terça-feira"); break;
+    case 4 : alert("Quarta-feira"); break;
+    case 5 : alert("Quinta-feira"); break;
+    case 6 : alert("Sexta-feira"); break;
+    case 7 : alert("Sábado"); break;
+    default : alert("Número inválido"); break;
+}
+
+*/
+
+/*
+let nota1 = Number(prompt("Informe a sua primeira nota"))
+let nota2 = Number(prompt("Informe a sua segunda nota"))
+alert(nota1 + " é a sua primeira nota")
+alert(nota2 + " é a sua segunda nota")
+let media = (nota1 + nota2) / 2
+alert(media + " é a sua média")
+alert("A média é um valor representativo que resume um conjunto de dados.")
+if(media > 9 && media <= 10){
+    alert("Você foi um aluno nota A")
+    alert("Você foi aprovado")
+}
+else if(media > 7.5 && media <= 9){
+    alert("Você foi um aluno nota B")
+    alert("Você foi aprovado")
+}
+else if(media > 6 && media <= 7.5){
+    alert("Você foi um aluno nota C")
+    alert("Você foi aprovado")
+}
+else if(media > 4 && media <= 6){
+    alert("Você foi um aluno nota D")
+    alert("Você foi reprovado")
+}
+else if(media > 0 && media <= 4){
+    alert("Você foi um aluno nota E")
+    alert("Você foi reprovado")
+}
+else if(media == 0){
+    alert("Sua média foi zero")
+}
+else{
+    alert("Não é possível")
+}
+
+*/
+
+let lado1 =  Number(prompt("Informe o primeiro lado do triângulo"))
+let lado2 =  Number(prompt("Informe o segundo lado do triângulo"))
+let lado3 =  Number(prompt("Informe o terceiro lado do triângulo"))
+if(lado1 > (lado2 + lado3) || lado2 > (lado1+ lado3) || lado3 > (lado1 + lado2)){
+    alert("É, matematicamente, impossível existir um triãngulo assim")
+}
+else{
+    alert("Esse triângulo existe")
+}
+if(lado1 == lado2 && lado2 == lado3){
+    alert("Esse triângulo é equilátero")
+}
+else if(lado1 == lado2 && lado2 != lado3 || lado3 == lado2 && lado2 != lado1 || lado1 == lado3 && lado2 != lado3){
+    alert("Esse triângulo é isóceles")
+}
+else{
+    alert("Esse triângulo é escaleno")
+}
 
